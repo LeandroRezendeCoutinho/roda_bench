@@ -1,11 +1,6 @@
 # frozen_string_literal: true
+require 'sequel'
+require_relative '../db/connection'
 
-class Post
-  attr_accessor :title
-  attr_accessor :body
-
-  def initialize(title, body)
-    @title = title
-    @body = body
-  end
+class Post < Sequel::Model
 end
