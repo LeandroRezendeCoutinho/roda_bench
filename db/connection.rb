@@ -1,3 +1,3 @@
 # frozen_string_literal: true
 
-DB = Sequel.sqlite('db/app.db')
+DB = Sequel.sqlite('db/data/app.db')

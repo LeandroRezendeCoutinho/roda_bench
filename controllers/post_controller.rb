@@ -6,7 +6,7 @@ class PostController < Roda
   route do |r|
     r.get do
       @posts = Post.all
-      render('index')
+      render('post/index')
     end
   end
 end
