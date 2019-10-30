@@ -1,6 +1,6 @@
 
 # Roda application scaffold
-Very simple full stack roda app template
+An unconventional Rails like Roda application
 
 ## Generate bins to project
 bundle install --binstubs

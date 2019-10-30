@@ -2,7 +2,7 @@
 
 require_relative '../models/post'
 
-class PostController < Roda
+class PostsController < Roda
   plugin :render
 
   route do |r|
