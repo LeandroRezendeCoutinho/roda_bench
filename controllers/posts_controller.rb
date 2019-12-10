@@ -4,8 +4,17 @@ require_relative '../models/post'
 
 class PostsController < Roda
   plugin :render
+  plugin :all_verbs
 
   route do |r|
+    r.is Integer do |id|
+      @posts = Post.where(id: id)
+
+      r.get do
+        render('post/index')
+      end
+    end
+
     r.get do
       @posts = Post.all
       render('post/index')
