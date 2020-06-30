@@ -14,7 +14,7 @@ gem 'rodauth'
 gem 'rotp'
 gem 'rqrcode'
 gem 'sequel', '>= 5'
-gem 'sequel_pg', '>= 1.8'
+# gem 'sequel_pg', '>= 1.8'
 gem 'sqlite3'
 gem 'tilt'
 

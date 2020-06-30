@@ -11,13 +11,13 @@ class PostsController < Roda
       @posts = Post.where(id: id)
 
       r.get do
-        render('post/index')
+        render('posts/index')
       end
     end
 
     r.get do
       @posts = Post.all
-      render('post/index')
+      render('posts/index')
     end
   end
 end

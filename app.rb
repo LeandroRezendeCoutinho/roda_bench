@@ -9,7 +9,7 @@ class App < Roda
   plugin :basic_auth
 
   route do |r|
-    r.basic_auth { |user, pass| [user, pass] == %w[user password] }
+    # r.basic_auth { |user, pass| [user, pass] == %w[user password] }
 
     r.root do
       'hello'
